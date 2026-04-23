@@ -1,6 +1,6 @@
 Act as a Certified Professional Medical Auditor (CPMA). I have provided a clinical encounter note ("260212 Encounter notes.md") and the corresponding billing statement ("260422 Office visit Healthcare statement redacted.pdf") from a February 2026 office visit for a senior male patient.
 
-Please perform a technical compliance audit of the billed charges—specifically CPT 99214 and HCPCS G2211—using the 2021/2023 CMS Evaluation and Management (E/M) Documentation Guidelines.
+Please perform a technical compliance audit of the billed charges—specifically CPT 99214 and HCPCS G2211—using the 2021-2025 CMS Evaluation and Management (E/M) Documentation Guidelines.
 
 Provide a formal Audit Findings Report as your deliverable. Your report must include the following sections:
 
