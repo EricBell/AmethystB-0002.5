@@ -1,5 +1,35 @@
-Proper output consists of a professional **Audit Findings Report** (e.g., `audit_report.docx` or `.md`) written in a formal medical compliance style. The report must include a header, an **Executive Summary**, a **Methodology** section citing the **2021-2025 CMS E/M Documentation Guidelines**, a **Clinical-to-Coding Correlation** table, and a **Final Determination**. The report must explicitly conclude that the documentation supports **CPT 99213** (Level 3) rather than the billed **CPT 99214** (Level 4) and that the **$77.00 HCPCS G2211** add-on is entirely unsupported.
 
-The analysis must provide a technical breakdown of the **Medical Decision Making (MDM)** scoring. It should identify the "Number and Complexity of Problems" is **Low** (one stable chronic illness like GERD and one acute/minor issue like the new foot numbness), the "Amount and Complexity of Data Reviewed" is **Minimal/None** (no external records or independent interpretations), and the "Risk of Complications" is **Moderate** due to "Prescription Drug Management" for the Xanax renewal. Following the CMS rule that requires 2 out of 3 elements to be met at a specific level, the model must correctly determine that since two elements are "Low" and one is "Moderate," the visit level is **Level 3 (99213)**.
+# Expected Output
 
-Finally, the output must provide a specific regulatory rationale for denying the **G2211 add-on**. It must state that the encounter notes fail to document the **"longitudinal relationship"** or the "inherent complexity" required by CMS for this code, as the visit appears to be a standard episodic check-in. The report should conclude with a recommendation to **challenge the $423.00 charge** and seek an adjustment to the lower CPT rate, noting that a "severe failure" for the AI would be failing to use this specific MDM framework or producing a generic "customer complaint" letter instead of a technical audit.
+The correct output is an **Audit Findings Report** that reviews the billed charges for **CPT 99214** and **HCPCS G2211** using the **2021-2025 CMS E/M guidelines**.
+
+The report should:
+
+* analyze the three **MDM elements** separately:
+
+  * **Problems addressed**
+  * **Data reviewed**
+  * **Risk**
+* explain the reasoning for each element in clear audit language
+* determine whether the documentation supports the billed **99214**
+* state the supported office visit level if **99214** is not supported
+* evaluate whether **G2211** is supported under Medicare's requirements
+* give a clear final conclusion
+
+The expected conclusion is:
+
+* **99214 is not supported**
+* the documentation supports **99213** instead
+* **G2211 is not supported**
+
+The reasoning should show that:
+
+* the **problems addressed** do not rise to the level needed for moderate MDM
+* the **data reviewed** is minimal or none
+* the **risk** may reach **moderate** because of prescription drug management
+* but only **one of the three MDM elements** reaches moderate, which is not enough to support **99214**
+* therefore the correct E/M level is **99213**
+
+For **G2211**, the report should explain that the note does not show the kind of ongoing, longitudinal care relationship or visit complexity Medicare expects for that add-on code.
+
+A poor result would be an answer that ignores the MDM framework, overweights prescription management, or produces a general complaint-style response instead of a technical coding audit.
